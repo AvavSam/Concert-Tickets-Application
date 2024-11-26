@@ -1,11 +1,8 @@
 package com.example.ticketsapp;
 
-import android.os.Parcel;
-import android.os.Parcelable;
+import java.io.Serializable;
 
-import androidx.annotation.NonNull;
-
-public class Concert implements Parcelable {
+public class Concert implements Serializable {
     private String name;
     private String location;
     private String date;
@@ -14,19 +11,7 @@ public class Concert implements Parcelable {
     private String status;
     private int imageResource;
 
-    public Concert(String name, String location, String date, String price, String status, String count, int imageResource) {
-        this.name = name;
-        this.location = location;
-        this.date = date;
-        this.price = price;
-        this.imageResource = imageResource;
-        this.count = count;
-        this.status = status;
-    }
-
-    public Concert() {
-    }
-
+    // Getters and setters for each field
     public String getName() {
         return name;
     }
@@ -59,49 +44,10 @@ public class Concert implements Parcelable {
         this.price = price;
     }
 
-    public int getImageResource() {
-        return imageResource;
-    }
-
-    public void setImageResource(int imageResource) {
-        this.imageResource = imageResource;
-    }
-
-    @Override
-    public int describeContents() {
-        return 0;
-    }
-
-    @Override
-    public void writeToParcel(@NonNull Parcel parcel, int i) {
-        parcel.writeString(name);
-        parcel.writeString(location);
-        parcel.writeString(date);
-        parcel.writeString(price);
-        parcel.writeInt(imageResource);
-    }
-
-    public static final Parcelable.Creator<Concert> CREATOR = new Parcelable.Creator<Concert>() {
-        public Concert createFromParcel(Parcel in) {
-            return new Concert(in);
-        }
-
-        public Concert[] newArray(int size) {
-            return new Concert[size];
-        }
-    };
-
-    private Concert(Parcel in) {
-        name = in.readString();
-        location = in.readString();
-        date = in.readString();
-        price = in.readString();
-        imageResource = in.readInt();
-    }
-
     public String getCount() {
         return count;
     }
+
     public void setCount(String count) {
         this.count = count;
     }
@@ -109,7 +55,16 @@ public class Concert implements Parcelable {
     public String getStatus() {
         return status;
     }
+
     public void setStatus(String status) {
         this.status = status;
+    }
+
+    public int getImageResource() {
+        return imageResource;
+    }
+
+    public void setImageResource(int imageResource) {
+        this.imageResource = imageResource;
     }
 }

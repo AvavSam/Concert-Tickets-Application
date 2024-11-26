@@ -5,16 +5,19 @@
     android:orientation="vertical">
 
     <!-- Title -->
-    <TextView
-        android:id="@+id/tv_title"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Your Tickets"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        android:paddingBottom="8dp" />
 
     <!-- RecyclerView -->
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="8dp"
+        android:text="Your Tickets"
+        android:layout_marginTop="15dp"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView_tickets"
         android:layout_width="match_parent"

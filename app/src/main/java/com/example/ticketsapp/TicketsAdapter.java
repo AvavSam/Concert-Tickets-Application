@@ -6,7 +6,9 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
+import androidx.fragment.app.DialogFragment;
 import androidx.recyclerview.widget.RecyclerView;
 import java.util.List;
 
@@ -46,6 +48,15 @@ public class TicketsAdapter extends RecyclerView.Adapter<TicketsAdapter.TicketsV
         } else {
             holder.ticketStatus.setTextColor(ContextCompat.getColor(holder.itemView.getContext(), R.color.on_progress_black));
         }
+
+
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                ConcertDetailDialogFragment dialogFragment = ConcertDetailDialogFragment.newInstance(concert);
+                dialogFragment.show(((AppCompatActivity) v.getContext()).getSupportFragmentManager(), "concertDetail");
+            }
+        });
     }
 
     @Override
