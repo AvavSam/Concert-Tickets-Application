@@ -1,0 +1,65 @@
+<resources>
+    <string name="app_name">Tickets App</string>
+    <string name="concert_name">Concert Name</string>
+    <string name="concert_date">Concert Date</string>
+    <!-- Daftar Nama Konser -->
+    <string-array name="concert_names">
+        <item>One Direction Concert</item>
+        <item>Coldplay Concert</item>
+        <item>Taylor Swift Concert</item>
+        <item>Ed Sheeran Live</item>
+        <item>Ariana Grande World Tour</item>
+    </string-array>
+
+    <!-- Lokasi Konser -->
+    <string-array name="concert_locations">
+        <item>Jakarta, Indonesia</item>
+        <item>Bali, Indonesia</item>
+        <item>Bandung, Indonesia</item>
+        <item>Surabaya, Indonesia</item>
+        <item>Yogyakarta, Indonesia</item>
+    </string-array>
+
+    <!-- Tanggal Konser -->
+    <string-array name="concert_dates">
+        <item>February 30 2026</item>
+        <item>March 10 2026</item>
+        <item>April 5 2026</item>
+        <item>May 15 2026</item>
+        <item>June 25 2026</item>
+    </string-array>
+
+    <!-- Harga Konser -->
+    <string-array name="concert_prices">
+        <item>IDR 24.000.000</item>
+        <item>IDR 20.000.000</item>
+        <item>IDR 15.000.000</item>
+        <item>IDR 10.000.000</item>
+        <item>IDR 30.000.000</item>
+    </string-array>
+
+    <integer-array name="concert_photo">
+        <item>@drawable/onedirection</item>
+        <item>@drawable/coldplay</item>
+        <item>@drawable/taylor</item>
+        <item>@drawable/edsheeran</item>
+        <item>@drawable/ariana</item>
+    </integer-array>
+
+    <string-array name="tickets_status">
+        <item>Succeed</item>
+        <item>Succeed</item>
+        <item>Cancelled</item>
+        <item>Succeed</item>
+        <item>On Progress</item>
+    </string-array>
+
+    <string-array name="tickets_amount">
+        <item>2 Tickets</item>
+        <item>1 Ticket</item>
+        <item>3 Tickets</item>
+        <item>4 Tickets</item>
+        <item>2 Tickets</item>
+    </string-array>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

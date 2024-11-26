@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#ffffff">
+
+    <!-- Header Profil -->
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/hero"
+        android:orientation="vertical"
+        android:gravity="center"
+        tools:ignore="ExtraText">
+
+
+        <!-- Gambar Profil -->
+        <!-- Ganti dengan gambar profil Anda -->
+
+        <!-- Nama Profil -->
+        <ImageView
+            android:id="@+id/profileImage"
+            android:layout_width="68dp"
+            android:layout_height="71dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/circle_background"
+            android:scaleType="centerCrop"
+            android:src="@drawable/rizka" />
+
+        <TextView
+            android:id="@+id/profileName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ardiansyah Rizka Ramadhan"
+            android:textColor="#ffffff"
+            android:textSize="18sp"/>
+
+        <!-- Email Profil -->
+        <TextView
+            android:id="@+id/profileEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ardirizka@gmail.com"
+            android:textColor="#ffffff"
+            android:textSize="14sp"/>
+
+    </LinearLayout>
+
+    <!-- Menu di bawah Profil -->
+    <LinearLayout
+        android:layout_below="@id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Menu Profile Setting -->
+        <Button
+            android:id="@+id/btnProfileSetting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Profile Setting"
+            android:backgroundTint="#d0e1ff"
+            android:textColor="#000000"
+            android:drawableEnd="@drawable/arrow"
+            android:gravity="start|center_vertical"
+            android:padding="12dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="15dp"/>
+
+        <!-- Menu Change Password -->
+        <Button
+            android:id="@+id/btnChangePassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Voucher"
+            android:backgroundTint="#d0e1ff"
+            android:textColor="#000000"
+            android:drawableEnd="@drawable/arrow"
+            android:gravity="start|center_vertical"
+            android:padding="12dp"
+            android:layout_marginBottom="15dp"/>
+
+        <!-- Menu Your Ticket -->
+        <Button
+            android:id="@+id/btnYourTicket"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Your Ticket"
+            android:backgroundTint="#d0e1ff"
+            android:textColor="#000000"
+            android:drawableEnd="@drawable/arrow"
+            android:gravity="start|center_vertical"
+            android:padding="12dp"
+            android:layout_marginBottom="15dp"/>
+
+        <!-- Menu Notification -->
+        <Button
+            android:id="@+id/btnNotification"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Notification"
+            android:backgroundTint="#d0e1ff"
+            android:textColor="#000000"
+            android:drawableEnd="@drawable/arrow"
+            android:gravity="start|center_vertical"
+            android:padding="12dp"
+            android:layout_marginBottom="15dp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
